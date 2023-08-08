@@ -1,0 +1,331 @@
+/*------------------------------------------------------*/
+/*Colores*/
+
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+:root{
+  --azulclaro: #48D6ED;
+  --azuloscuro: #337AB7;
+  --azulnegro: #303342;
+  --negro: #333333;
+  --negro2: #000;
+  --gris: #B2B3B3;
+  --fondo: #FFFEFC;
+  --verdeazul: #157A8A;
+  --Magenta: #9C2759;
+  --blanco: #fff;
+  --degradado: linear-gradient(49.54deg, #337AB7 2.89%, #0B3860 80.34%);
+}
+
+/*------------------------------------------------------*/
+/*Estilos generales*/
+
+*{
+    margin:0;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    height: 100vh;
+}
+
+h1,h2,h3,h4,h5{
+    font-family: 'Marcellus', serif;
+}
+
+.contenedorPrincipal{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.centrar{
+    justify-content: center;
+    text-align: center;
+}
+
+
+
+#flexboxPrincipal{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+#lateralNavbar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    justify-content: space-between;
+
+    
+    width: 15%;
+    height: 100%;
+}
+
+.profileSection{
+    background: linear-gradient(to right, var(--azuloscuro), var(--azulnegro));
+    padding: 10%;
+
+}
+
+#lateralNavbar img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10%;
+}
+
+.optionsSection{
+    background-color: var(--negro);
+    color: var(--blanco);
+    height: 100%;
+    width: 100%;
+
+    cursor: pointer;
+}
+
+.optionsSection2{
+    background-color: var(--negro);
+    color: var(--blanco);
+    height: 100%;
+    width: 100%;
+
+    padding-top: 500%;
+    padding-bottom: 755%;
+}
+
+.optionButton{
+    background-color: var(--negro);
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+
+
+#generalSection{
+    background-image: url(../img/login/bg-login.png);
+    background-size: 100% 100%;
+    background-position: 50%;
+    height: 100%;
+
+    padding-top: 10%;
+    padding-bottom: 10%;
+    padding-left: 3%;
+    padding-right: 3%;
+
+    width: 100%;
+    height: 100%;
+}
+
+.formBackground{
+    background-color: var(--fondo);
+    opacity: 90%;
+    padding: 5%;
+    border-radius: 2%;
+}
+
+i{
+    font-size: 1rem;
+}
+
+.formSection input{
+    background-color: solid var(--blanco);
+    -webkit-box-shadow: 1px 2px 2px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 1px 2px 2px 0px rgba(0,0,0,0.5);
+    box-shadow: 1px 2px 2px 0px rgba(0,0,0,0.5);
+
+    width: 96%;
+}
+
+.uploadImage{
+    width: 100%;
+}
+
+input[type="checkbox"]{
+    border: none;
+    border-radius: 0;
+}
+
+
+.formElementSection{
+    margin-top: 7%;
+    margin-bottom: 7%;
+}
+
+.formElementSectionN{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.formElementSectionN input{
+    width: 90%;
+}
+
+.textarea{
+    width: 95%;
+    height: 100px;
+}
+
+
+.formIconsSection{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.formIconsElementSection{
+    display: flex;
+    flex-direction: row;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.formIconsElementSection i{
+    font-size: 1.5rem;
+    padding: 10%;
+}
+
+.buttonSection{
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.greyButton{
+    background-color: var(--negro);
+    color: var(--blanco);
+    border: none;
+    border-radius: 5%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    width: 70%;
+    text-align: center;
+}
+
+/*----------------------------------------------Resolución PC------------------------------------------------------*/
+
+@media screen and (min-width: 480px){ 
+
+    h1{
+        font-size: xx-large;
+        margin-top: -2%;
+        margin-bottom: -5%;
+    }
+
+    .optionsSection2{
+        padding-top: 113%;
+        padding-bottom: 113%;
+    }
+
+    #lateralNavbar img{
+        width: 50%;
+        height: 50%;
+        border-radius: 10%;
+
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+
+    #generalSection{
+        padding:3%;
+    }
+
+    .formSection{
+        margin-top: 7%;
+    }
+
+    .formElementSectionN{
+        width: 100%;
+        margin-top: -5%;
+        margin-bottom: -5%;
+    }
+
+    .formElementSection{
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+
+    .formSection input{
+        width: 100%;
+    }
+
+    .formElementSectionN{
+        flex-direction: row;
+        margin-top: 0%;
+    }
+    
+    .formElementSectionN input{
+        width: 150%;
+    }
+
+    
+
+    .elementN2{
+        margin-right: 14.1%;
+    }
+
+
+    .sectionInputPC{
+        display: flex;
+        flex-direction: row;
+        width: 99%;
+    }
+
+    .subSection1{
+        width: 60%;
+    }
+
+    .subSection2{
+        margin-left: 5%;
+        width: 40%;
+    }
+
+
+    .textarea{
+        width: 99.2%;
+        height: 100px;
+        margin-bottom: -3%;
+    }
+    
+
+
+    .formIconsSection{
+        display: flex;
+        flex-direction: row;
+        margin-top: 7%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .formIconsElementSection input{
+        width: 100%;
+        height: 100%;
+    }
+    
+    
+    .formIconsElementSection i{
+        font-size: 2rem;
+        padding: 10%;
+        
+    }
+
+
+
+
+    .buttonSection{
+        margin-top: 5%;
+        margin-bottom: 0%;
+    }
+
+    .greyButton{
+        font-size: large;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        width: 30%;
+        text-align: center;
+    }
+}

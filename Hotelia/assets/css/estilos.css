@@ -1,0 +1,762 @@
+/*------------------------------------------------------*/
+/*Colores*/
+
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+:root{
+  --azulclaro: #48D6ED;
+  --azuloscuro: #337AB7;
+  --azulnegro: #303342;
+  --negro: #333333;
+  --negro2: #000;
+  --gris: #B2B3B3;
+  --fondo: #FFFEFC;
+  --verdeazul: #157A8A;
+  --Magenta: #9C2759;
+  --blanco: #fff;
+  --degradado: linear-gradient(49.54deg, #337AB7 2.89%, #0B3860 80.34%);
+}
+
+
+
+
+/*------------------------------------------------------*/
+/*Estilos generales*/
+*{
+    margin:0;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    height: 100vh;
+}
+
+h1,h2,h3,h4,h5{
+    font-family: 'Marcellus', serif;
+}
+
+.contenedorPrincipal{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.centrar{
+    justify-content: center;
+    text-align: center;
+}
+
+/*-----------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------INDEX--------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------*/
+
+/*------------------------------------------------------*/
+/*Navbar*/
+
+nav{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Marcellus', serif;
+    font-size: 1.3em;
+    position:fixed;
+    z-index: 100;
+    width: 100%;    
+}
+
+.logo{
+    background-color: var(--negro2);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.logo img{
+    width: 40%;
+    max-width: 180px;       
+}
+
+.logo i{
+    color: var(--blanco);
+    font-size: 2rem;
+}
+
+.menu{
+    background-color: rgba(1, 10, 52, 0.838);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    display: none; 
+}
+
+.menu-hr{
+    width: 90%;
+    background-color: var(--blanco);
+}
+
+.item{
+padding: 1rem;
+}
+
+nav a{
+    color: var(--blanco);
+    text-decoration: none;
+    text-align: center;
+}
+
+nav a:hover{
+    background-color: #0B3860;
+}
+
+.navbar-button{
+    background-color:transparent;
+    border: none;
+    border-radius: 3px;
+    font-size: 1em;
+    padding: 0.5rem;
+    font-family: 'Marcellus', serif;
+    color: var(--blanco);
+}
+
+
+
+/*------------------------------------------------------*/
+/*Banner*/
+#banner{
+    background: url(../img/index/slide1.jpg);
+    background-size: 200% 75%;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    height: 50%;
+}
+
+.textobanner{
+    position: absolute;
+    top: 34%;
+    background-color: rgba(0,0,0,0.35);
+    color: var(--blanco);
+    text-align: left;
+    padding: 0.5rem;
+    font-size: 1.5em;
+}
+
+
+
+/*------------------------------------------------------*/
+/*Botón rojo lateral*/
+
+.botonRojoLateral{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--Magenta);
+    margin-left: 90%;
+    margin-top: -30%;
+    padding: 3.6%;
+    position: absolute;
+    color: var(--blanco);
+    text-align: center;
+
+    cursor: pointer;
+}
+
+
+
+/*------------------------------------------------------*/
+/*Descripción*/
+#descripcion{ 
+    margin-bottom: 10%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#descripcion p{
+    padding: 1rem;
+    text-align: justify;
+}
+#descripcion img{
+    display: none;
+}
+
+
+
+/*------------------------------------------------------*/
+/*Features*/
+#features{
+    background: url(../img/index/bg-features.png);
+    background-size: 400% 100%;
+    background-position: 75%;
+
+    background-repeat: no-repeat;
+    color: white;
+    padding-top: 1rem;
+}
+
+.features-title{
+    background-color: rgba(0,0,0,0.35);
+    text-align: center;
+    padding: 0.5rem;
+    font-size: 1.5em;
+}
+
+.features-description{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.feature{
+    min-width: 150px;
+    max-width: 180px;
+    margin: 1rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.feature i{
+    font-size: 2.2em;
+    margin-bottom: 1.5rem;
+}
+
+.feature-blue{
+    background-color: rgba(0, 50, 94, 0.682);
+}
+
+.feature-black{
+    background-color: rgba(0,0,0,0.59);
+}
+
+
+
+
+/*------------------------------------------------------*/
+/*Mapa*/
+
+.textMap .blue-hr{
+    width: 100%;
+    background-color: var(--azuloscuro);
+}
+
+
+
+/*------------------------------------------------------*/
+/*Opiniones*/
+
+#opinion{
+    color: var(--blanco);
+    height: 100%;
+}
+
+.fondoTituloOpiniones{
+    background-image: url(../img/index/opiniones/vector-comentarios.svg);
+    padding: 5%;
+    padding-bottom: 20%;
+}
+
+.slidesComments{
+    position: relative;
+}
+
+.comentarios{
+    display: flex;
+    flex-direction: column;
+}
+
+.comentario{
+    padding: 7%;
+    margin: 10%;
+    margin-top: -15%;
+    margin-bottom: 20%;
+    background: --degradado;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.comentario .imgVectorSuperior{
+    width: 121.5%;
+    height: 100%;
+    margin: -10.5%;
+}
+
+.seccion1Comentarios{
+    margin-top: -20%;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+}
+
+.seccion1-2Comentarios{
+    margin-left: 10%;
+}
+
+.fotoPerfil{
+    width: 20%;
+    height: 40%;
+    border-radius: 100%;
+}
+
+
+.estrellasOpiniones{
+    display: flex;
+    flex-direction: row;
+    color: var(--blanco);
+}
+
+.estrellasOpinionesNull{
+    color: var(--Magenta); 
+}
+
+
+/*------------------------------------------------------*/
+/*footer*/
+
+.footer{
+    background-color: var(--negro2);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.footer a{
+    text-decoration: none;
+    color: white;
+}
+
+.footer a:hover{
+    text-decoration: none;
+    color: var(--azulclaro);
+}
+
+.flexboxFooter{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+.footer-hr{
+    width: 100%;
+    background-color: var(--blanco);
+}
+
+.flexboxFooter2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.flexboxFooter3 .i{
+    font-size: large;
+    white-space: normal;
+    margin: 2.5%;
+}
+
+
+
+
+
+
+/*-----------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------LOGIN--------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------*/
+
+#login{
+    background-image: url(../img/login/bg-login.png);
+    background-size: 100% 100%;
+    background-position: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.logoLogin{
+    width: 40%;
+    height: 20%;
+    margin-left: 5%;
+    margin-top: -2%;
+}
+
+
+.vectorLogin{
+    background-image: url(../img/login/vector-login.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-left: 15%;
+    margin-right: 15%;
+
+
+}
+
+.formularioFondo{
+    background-color: var(--azuloscuro);
+    border-radius: 3px;
+    opacity: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+
+
+.formulario{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 5%;
+}
+
+.formulario i{
+    color: var(--Magenta);
+    background-color: var(--blanco);
+    border-radius: 100%;
+    font-size: 2.5rem;
+    margin-bottom: 5%;
+
+    opacity: 1;
+}
+
+.formulario form{
+    color: var(--blanco);
+
+    opacity: 1;
+}
+
+.formulario form input{
+    border-radius: 2px;
+    border: none;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    width: 97%;
+
+    opacity: 1;
+}
+
+.flexboxForm{
+    display: flex;
+    flex-direction: column;
+    margin-left: 17%;
+    margin-right: 17%;
+}
+
+.botonNegro{
+    width: 100%;
+    border: none;
+    border-radius: 2px;
+    background-color: var(--negro2);
+    color: var(--blanco);
+    cursor: pointer;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin-bottom: 10%;
+
+    opacity: 1;
+}
+
+.redirectRegistrarse{
+    visibility: hidden;
+}
+
+
+
+
+
+
+
+
+
+/*----------------------------------------------Resolución PC------------------------------------------------------*/
+
+@media screen and (min-width: 480px){ 
+/*-----------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------INDEX--------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------*/
+    nav{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+        background-color: var(--negro2);
+    }
+
+    .logo{
+        padding: 1rem;
+    }
+
+    .logo img{
+        width: 100%;
+        max-width: 180px;       
+    }
+
+    .logo i{
+        display: none;
+    } 
+
+    .menu{
+        background-color: var(--negro2);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .menu-hr{
+        display: none;
+    }
+
+    .navbar-button{
+        background-color:var(--azuloscuro);
+    }
+
+
+
+/*------------------------------------------------------*/
+/*Descripción*/
+
+    #descripcion{
+        display: flex;
+        align-items: center; 
+        justify-content: space-around;
+        padding: 3rem;
+        margin-left: 6%;
+        margin-right: 6%;
+    }
+    
+    #descripcion p{
+        flex-basis:70%;
+    }
+
+    #descripcion img{
+        margin-top: 5rem;
+        display: block;
+        max-height: 200px;
+        flex-basis:30%;
+    } 
+
+
+
+/*------------------------------------------------------*/
+/*Features*/
+#features{
+    margin-top: -10%;
+    background: url(../img/index/bg-features.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+/*------------------------------------------------------*/
+/*Banner*/
+#banner{
+    background: url(../img/index/slide1.jpg);
+    background-size: 100% 75%;
+    background-repeat: no-repeat;
+    height: 100%;
+    margin-bottom: -15%;
+}
+
+.textobanner{
+    position: absolute;
+    top: 67%;
+    background-color: rgba(0,0,0,0.35);
+    color: var(--blanco);
+    text-align: left;
+    padding: 0.5rem;
+    font-size: 1.5em;
+}
+
+
+
+/*------------------------------------------------------*/
+/*Botón rojo lateral*/
+
+#botonRojoLateral{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    background-color: var(--Magenta);
+    margin-left: 95.3%;
+    margin-top: -5%;
+    padding: 2%;
+    position: absolute;
+    color: var(--blanco);
+
+    cursor: pointer;
+}
+
+
+/*------------------------------------------------------*/
+/*Opiniones*/
+.fondoTituloOpiniones{
+    background-image: url(../img/index/opiniones/vector-comentarios.svg);
+    background-size: 110% 100%;
+    background-repeat: no-repeat;
+    padding: 5%;
+    padding-bottom: 17%;
+}
+
+.comentarios{
+    display: flex;
+    flex-direction: row;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.comentario{
+    padding: 2%;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: -15%;
+    background: linear-gradient(to right, var(--azuloscuro), var(--azulnegro));
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.comentario .imgVectorSuperior{
+    width: 116%;
+    height: 50%;
+    margin: -8%;
+}
+
+.seccion1Comentarios{
+    margin-top: -20%;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+}
+
+.fotoPerfil{
+    width: 30%;
+    height: 70%;
+    border-radius: 100%;
+}
+
+
+
+/*------------------------------------------------------*/
+/*footer*/
+
+.footer{
+    background-color: var(--negro2);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.footer a{
+    text-decoration: none;
+    color: white;
+}
+
+.divFooter{
+    width: 100%;
+    height: 100%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.footer a:hover{
+    text-decoration: none;
+    color: var(--azulclaro);
+}
+
+.flexboxFooter{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: -5%;
+    margin-right: -5%;
+}
+
+
+.footer-hr{
+    width: 100%;
+    background-color: var(--blanco);
+    visibility: hidden;
+}
+
+.flexboxFooter2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.flexboxFooter3 .i{
+    font-size: x-large;
+    white-space: normal;
+    margin: 1%;
+}
+
+
+
+
+/*-----------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------LOGIN--------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------*/
+
+.logoLogin{
+    width: 40%;
+}
+
+.formularioFondo{
+    margin-left: 35%;
+    margin-right: 35%;
+}
+
+.formulario i{
+    font-size: 4rem;
+}
+
+.formulario form{
+    color: var(--blanco);
+    opacity: 1;
+}
+
+.formulario form input{
+    border-radius: 2px;
+    border: none;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    width: 100%;
+
+    opacity: 1;
+}
+
+.flexboxForm{
+    margin-left: -10%;
+    margin-right: -10%;
+}
+
+.botonNegro{
+    margin-bottom: 3%;
+}
+
+
+.redirectRegistrarse{
+    color: var(--blanco);
+    visibility: visible;
+    text-align: center;
+    margin-bottom: 10%;
+}
+
+.redirectRegistrarse a{
+    color: var(--negro2);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.redirectRegistrarse a:hover{
+    text-decoration: none;
+}
+
+
+}

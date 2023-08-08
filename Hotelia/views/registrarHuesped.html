@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../assets/css/registHuesp.css">
+    <script src="../assets/js/modales.js"></script>
+    <script src="https://kit.fontawesome.com/6131ecdde6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="container">
+        <div class="backgroundImg"></div>
+
+        
+        <section id="titleSection">
+            <div class="logoTitle"><img src="../assets/img/Hotelia horizontal blanco.svg"></div>
+            <div class="title"><h2>Un lugar en tu corazón</h2></div>
+            <div class="titlePC"><h2>Eres más que bienvenido</h2></div>
+        </section>
+        <div class="backgroundTitle"></div>
+
+
+        <form id="formSection">
+            <div class="titleForm centrar"><h1>Registrarse</h1></div>
+
+            <div class="label1"><label>Tipo de documento</label></div>
+            <select name="" id="" class="input1">
+                <option value="">Cedula de ciudadanía</option>
+                <option value="">Cedula de extrangería</option>
+                <option value="">Documento provicional</option>
+                <option value="">Otro</option>
+            </select>
+
+            <div class="label2"><label for="">Número de documento</label></div>
+            <input type="number" name="" id="" class="input2">
+
+            <div class="label3"><label for="">Nombres</label></div>
+            <input type="text" name="" id="" class="input3">
+
+            <div class="label4"><label for="">Apellidos</label></div>
+            <input type="text" name="" id="" class="input4">
+
+            <div class="label5"><label for="">Fecha de nacimiento</label></div>
+            <input type="date" name="" id="" class="input5">
+
+            <div class="label6"><label for="">Genero</label></div>
+            <div class="inputs6">
+                <input type="checkbox" name="" id="" class="input61">
+                <div class="label61"><label for="">Mujer</label></div>
+
+                <input type="checkbox" name="" id="" class="input62">
+                <div class="label62"><label for="">Hombre</label></div>
+
+                <input type="checkbox" name="" id="" class="input63">
+                <div class="label63"><label for="">Otro</label></div>
+            </div>
+
+            <div class="label7"><label for="">Email</label></div>
+            <input type="text" name="" id="" class="input7">
+
+            <div class="label8"><label for="">Telefono de contacto</label></div>
+            <input type="number" name="" id="" class="input8">
+
+            <div class="label9"><label>País de origen</label></div>
+            <select name="" id="" class="input9">
+                <option value="">País 1</option>
+                <option value="">País 2</option>
+                <option value="">País 3</option>
+                <option value="">País 4</option>
+            </select>
+
+            <div class="label10"><label for="">Foto</label></div>
+            <input type="file" accept=".jpg, .jpeg, .png" class="input10">
+
+            <div class="label11"><label for="">Contraseña</label></div>
+            <input type="password" class="input11">
+
+            <div class="label12"><label for="">Confirmar contraseña</label></div>
+            <input type="password" class="input12">
+
+            <div class="inputs13">
+                <input type="checkbox" name="" id="" class="input131 centrar">
+                <div class="label131" ><label for="" >Acpeto <a onclick="abrirModal()">Términos y condiciones</a></label></div>
+            </div>
+
+            <div class="sectionButton">
+                <button class="blackButtonForm">Ingresar</button>
+            </div>
+            
+
+        </form>
+
+    </div>
+
+
+    <div id="modal1" class="modal1">
+        <div class="contenidoModal modal1">
+            <div class="fondoTituloModal">
+                <div class="tituloModal centrar"><h2>Términos y Condiciones</h2></div>
+            </div>
+            
+
+            <div class="textoModal">
+                <p>Estos Términos del Servicio reflejan la forma de trabajar de Google como empresa, las leyes por las que nos regimos y determinados aspectos que siempre hemos creído que son ciertos. Por ello, estos Términos del Servicio ayudan a definir la relación que tiene Google contigo cuando interactúas con nuestros servicios. Por ejemplo, estos términos incluyen las siguientes secciones:</p>
+
+                <p>Qué puedes esperar de nosotros, donde se describe cómo proporcionamos y desarrollamos nuestros <br>
+                Lo que esperamos de ti, donde se establecen ciertas reglas para utilizar nuestros servicios.</p>
+            </div>
+            
+            <button class="blackButtonModal" onclick="cerrarModal()">Aceptar</button>
+        </div>
+    </div>
+
+</body>
+</html>

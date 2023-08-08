@@ -1,0 +1,403 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+:root{
+  --azulclaro: #48D6ED;
+  --azuloscuro: #337AB7;
+  --azulnegro: #303342;
+  --negro: #333333;
+  --negro2: #000;
+  --gris: #B2B3B3;
+  --grisclaro: #dfdfdf;
+  --fondo: #FFFEFC;
+  --verdeazul: #157A8A;
+  --Magenta: #9C2759;
+  --blanco: #fff;
+  --degradado: linear-gradient(49.54deg, #337AB7 2.89%, #0B3860 80.34%);
+}
+
+/*------------------------------------------------------*/
+/*Estilos generales*/
+*{
+    margin:0;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    height: 100vh;
+}
+
+h1,h2,h3,h4,h5{
+    font-family: 'Marcellus', serif;
+}
+
+.centrar{
+    text-align: center;
+}
+
+#container{
+    display: grid;
+    grid-template-columns: 5% 90% 5%;
+    grid-template-rows: 5% 13% 3% 75% 5%;
+
+    height: 100%;
+}
+
+.backgroundImg{
+    background: url(../img/cityBackground.png);
+    background-size: 200% 100%;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    height: 100%;
+
+    grid-area: 1 / 1 / 6 / 4;
+}
+
+
+
+/*------------------------------------------------------*/
+/*Título*/
+
+#titleSection{
+    background-color: var(--azuloscuro);
+    opacity: 70%;
+
+    grid-area: 2 / 1 / 3 / 4;
+
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 60% 40%;
+}
+
+.logoTitle{
+    margin-top: 5%;
+    grid-area: 1 / 2 / 2 / 3;
+}
+.logoTitle img{
+    width: 100%;
+    height: 100%;
+}
+
+.title{
+    color: var(--blanco);
+    margin-top: 3%;
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.titlePC{
+    visibility: hidden;
+}
+
+
+/*------------------------------------------------------*/
+/*Formulario*/
+
+#formSection{
+    background-color: var(--blanco);
+    opacity: 90%;
+    border-radius: 5px;
+    padding: 5%;
+
+    grid-area: 4 / 2 / 5 / 3;
+
+    display: grid;
+    grid-template-columns: 20% 10% 40% 10% 20%;
+    grid-template-rows: 7% 3% 3.4% 0.6% 
+                            3% 3.4% 0.6% 
+                            3% 3.4% 0.6% 
+                            3% 3.4% 0.6% 
+                            3% 3.4% 0.6% 
+                            3% 3.4% 0.6% 
+                            3% 3.4% 0.6% 
+                            3% 3.4% 0.6% 
+                            3% 3.4% 0.6% 
+                            3% 3.4% 0.6% 
+                            3% 3.4% 0.6% 
+                            3% 3.4% 2% 
+                            3% 0.5% 0.5% 
+                            3.4%;
+}
+
+input, select{
+    background-color: var(--blanco);
+    border: none;
+    
+    -webkit-box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.75);
+    box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.75);
+}
+
+a{
+    text-decoration: none;
+    color: var(--azuloscuro);
+}
+
+
+
+
+.titleForm{ grid-area: 1 / 2 / 2 / 4; }
+
+.label1{ grid-area: 2 / 1 / 3 / 4; }
+.input1{ grid-area: 3 / 1 / 4 / 6; }
+
+.label2{ grid-area: 5 / 1 / 6 / 4; }
+.input2{ grid-area: 6 / 1 / 6 / 6;  }
+
+.label3{ grid-area: 7 / 1 / 8 / 4; }
+.input3{ grid-area: 9 / 1 / 10 / 6;}
+
+.label4{ grid-area: 11 / 1 / 12 / 4; }
+.input4{ grid-area: 12 / 1 / 13 / 6; }
+
+.label5{ grid-area: 15 / 1 / 14 / 4; }
+.input5{ grid-area: 16 / 1 / 15 / 6; }
+
+.label6{ grid-area: 18 / 1 / 17 / 4; }
+.inputs6{ grid-area: 19 / 1 / 18 / 6; 
+        display: grid;
+        grid-template-columns: 10% 20% 10% 20% 10% 20%; 
+        grid-template-rows: 100%;}
+
+.label7{ grid-area: 21 / 1 / 19 / 4; }
+.input7{ grid-area: 23 / 1 / 21 / 6; }
+
+.label8{ grid-area: 24 / 1 / 23 / 4; }
+.input8{ grid-area: 25 / 1 / 24 / 6; }
+
+.label9{ grid-area: 27 / 1 / 26 / 4; }
+.input9{ grid-area: 28 / 1 / 27 / 6; }
+
+.label10{ grid-area: 30 / 1 / 29 / 4; }
+.input10{ grid-area: 31 / 1 / 30 / 6; }
+
+.label11{ grid-area: 33 / 1 / 32 / 4; }
+.input11{ grid-area: 34 / 1 / 33 / 6; }
+
+.label12{ grid-area: 36 / 1 / 35 / 4; }
+.input12{ grid-area: 37 / 1 / 36 / 6; }
+
+.inputs13{ grid-area: 39 / 1 / 38 / 6; 
+        display: grid;
+        grid-template-columns: 15% 10% 70%; 
+        grid-template-rows: 100%;}
+.label131{grid-area: 1 / 3 / 2 / 4;}
+.input131{grid-area: 1 / 2 / 2 / 3;}
+
+
+.sectionButton{
+    grid-area: 42 / 3 / 41 / 4;
+    display: grid;
+    grid-template-columns: 100%; 
+    grid-template-rows: 100%;
+}
+
+.blackButtonForm{
+    background-color: var(--negro2);
+    color: var(--blanco);
+    border: none;
+    border-radius: 2px;
+
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+
+
+/*------------------------------------------------------*/
+/*Ventana Modal*/
+
+
+.modal1, #modal1 {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    height: 100%;
+
+    display: none;
+    grid-template-columns: 7% 86% 7%;
+    grid-template-rows: 30% 40% 30%;
+}
+  
+  
+.contenidoModal {
+    background-color: var(--blanco);
+    width: 90%;
+    margin: auto;
+    position: relative;
+
+    grid-area: 2 / 2 / 3 / 3;
+
+    display: grid;
+    grid-template-columns: 10% 20% 40% 20% 10%; 
+    grid-template-rows: 15% 5% 60% 5% 10% 5%;
+}
+
+
+.fondoTituloModal{
+    background-color: var(--azuloscuro);
+    grid-area: 1 / 1 / 2 / 6;
+    display: grid;
+    grid-template-columns: 7% 86% 7%; 
+    grid-template-rows: 20% 60% 20%;
+}
+
+.tituloModal{
+    grid-area: 2 / 2 / 3 / 2;
+    color: var(--blanco);
+}
+
+
+.textoModal{
+    grid-area: 3 / 2 / 4 / 5;
+    font-size: smaller;
+}
+
+.blackButtonModal{
+    background-color: var(--negro2);
+    color: var(--blanco);
+    border: none;
+    border-radius: 2px;
+
+    grid-area: 5 / 3 / 6 / 4;
+}
+
+
+
+
+/*----------------------------------------------Resolución PC------------------------------------------------------*/
+
+@media screen and (min-width: 480px){ 
+    /*------------------------------------------------------*/
+    /*Estilos generales*/
+
+    #container{
+        display: grid;
+        grid-template-columns: 30% 70%;
+        grid-template-rows: 100%;
+    }
+
+
+
+    /*------------------------------------------------------*/
+    /*Título*/
+
+    #titleSection{
+        opacity: 90%;
+        grid-area: 1 / 1 / 2 / 2;
+        grid-template-columns: 10% 80% 10%;
+        grid-template-rows:  30% 20% 5% 10% 40%;
+    }
+
+    .logoTitle{
+        margin-top: 5%;
+        grid-area: 2 / 2 / 3 / 3;
+    }
+
+    .title{
+        visibility: hidden;
+    }
+
+    .titlePC{
+        visibility: visible;
+        color: var(--blanco);
+        text-align: center;
+        grid-area: 4 / 2 / 5 / 3;
+    }
+
+
+
+    /*------------------------------------------------------*/
+    /*Formulario*/
+
+    #formSection{
+        padding: 3%;
+        margin: 5%;
+    
+        grid-area: 1 / 2 / 2 / 3;
+    
+        display: grid;
+        grid-template-columns: 47.5% 5% 47.5%;
+        grid-template-rows:10% 4% 5% 2.5% 
+                                4% 5% 2.5% 
+                                4% 5% 2.5% 
+                                4% 5% 2.5% 
+                                4% 5% 2.5% 
+                                4% 5% 5% 
+                                4% 2.5% 2.5% 
+                                4% 2.5% 2.5% 
+                                4%
+    }
+
+    .titleForm{ grid-area: 1 / 1 / 2 / 4; }
+
+    .label1{ grid-area: 2 / 1 / 3 / 2; }
+    .input1{ grid-area: 3 / 1 / 4 / 2; }
+
+    .label2{ grid-area: 2 / 3 / 3 / 4; }
+    .input2{ grid-area: 3 / 3 / 3 / 4;  }
+
+
+    .label3{ grid-area: 5 / 1 / 6 / 2; }
+    .input3{ grid-area: 6 / 1 / 7 / 2;}
+
+    .label4{ grid-area: 5 / 3 / 6 / 4; }
+    .input4{ grid-area: 6 / 3 / 7 / 4; }
+
+
+    .label5{ grid-area: 8 / 1 / 9 / 2; }
+    .input5{ grid-area: 9 / 1 / 10 / 2; }
+
+    .label6{ grid-area: 8 / 3 / 9 / 4; }
+    .inputs6{ grid-area: 9 / 3 / 10 / 4; 
+            display: grid;
+            grid-template-columns: 10% 20% 10% 20% 10% 20%; 
+            grid-template-rows: 100%;}
+
+
+    .label7{ grid-area: 11 / 1 / 12 / 2; }
+    .input7{ grid-area: 12 / 1 / 13 / 2; }
+
+    .label8{ grid-area: 11 / 3 / 12 / 4; }
+    .input8{ grid-area: 12 / 3 / 13 / 4; }
+
+
+    .label9{ grid-area:  14 / 1 / 15 / 2; }
+    .input9{ grid-area: 15 / 1 / 16 / 2; }
+
+    .label10{ grid-area: 14 / 3 / 15 / 4; }
+    .input10{ grid-area: 15 / 3 / 16 / 4; }
+
+
+    .label11{ grid-area: 17 / 1 / 18 / 2; }
+    .input11{ grid-area: 18 / 1 / 19 / 2; }
+
+    .label12{ grid-area: 17 / 3 / 18 / 4; }
+    .input12{ grid-area: 18 / 3 / 19 / 3; }
+
+
+    .inputs13{ grid-area: 20 / 1 / 21 / 6; 
+            display: grid;
+            grid-template-columns: 30% 10% 60%; 
+            grid-template-rows: 100%;}
+    .label131{grid-area: 1 / 3 / 2 / 4;}
+    .input131{grid-area: 1 / 2 / 2 / 3;}
+
+    .sectionButton{
+        grid-area: 23 / 1 / 25 / 6;
+
+        display: grid;
+        grid-template-columns: 30% 40% 30%; 
+        grid-template-rows: 100%;
+    }
+
+    .blackButtonForm{
+        grid-area: 1 / 2 / 2 / 3;
+    }
+
+    /*------------------------------------------------------*/
+    /*Ventana Modal*/
+
+    .contenidoModal {
+        width: 40%;
+    }
+    
+
+}

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <title>Document</title>
+    
+        <link rel="stylesheet" href="../assets/css/formHabitacion.css">
+        <script src="../assets/js/estilos.js"></script>
+        <script src="https://kit.fontawesome.com/6131ecdde6.js" crossorigin="anonymous"></script>
+    </head>
+<body>
+    <section id="flexboxPrincipal">
+        <div id="lateralNavbar">
+            <div class="profileSection centrar">
+                <div>
+                    <img src="../assets/img/hotelia campana.svg" alt="">
+                </div>
+                <div>
+                    <img src="../assets/img/index/opiniones/user1.png" alt="">
+                </div>
+            </div>
+    
+            <br> <br>
+    
+            <div class="optionsSection centrar">
+                
+                <div class="optionButton" id="optionButton1" onclick="selectedoOptionButton1()">
+                    <br> 
+                    <i class="fa-solid fa-bed"></i>
+                </div>
+    
+                <div class="optionButton" id="optionButton2" onclick="selectedoOptionButton2()">
+                    <br>
+                    <i class="fa-solid fa-bed"></i>
+                </div>
+    
+                <div class="optionButton" id="optionButton3" onclick="selectedoOptionButton3()">
+                    <br>
+                    <i class="fa-solid fa-pencil"></i>
+                </div>
+            </div>
+    
+    
+            <div class="optionsSection2 centrar">
+                <div class="optionButton" id="optionButton4" onclick="selectedoOptionButton4()">
+                    <br> <br>
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                </div>
+            </div>
+        </div>
+    
+        <div id="generalSection">
+            <div class="formBackground">
+                <h1 class="centrar">Registro de nueva habitación</h1> <br>
+    
+                <form action="" class="formSection">  
+                    
+                <div class="sectionInputPC">
+                    <div class="formElementSection subSection1">
+                        <div>
+                            <label for="">Nombre habitación</label>
+                        </div>
+    
+                        <div>
+                            <input type="text" >
+                        </div>
+                    </div>
+    
+                    
+                    <div class="formElementSection subSection2">
+                        <div>
+                            <label for="" min="1">N° habitación</label>
+                        </div>
+    
+                        <div>
+                            <input type="number">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sectionInputPC">
+                    <div class="formElementSection subSection1">
+                        <div class="formElementSectionN">
+                            <div >
+                                <div>
+                                    <label for="">N° camas</label>
+                                </div>
+        
+                                <div>
+                                    <input type="number" min="1" step="1" value="1">
+                                </div>
+                            </div>
+        
+                            <div class="elementN2">
+                                <div>
+                                    <label for="">N° huéspedes</label>
+                                </div>
+        
+                                <div>
+                                    <input type="number" min="1" step="1" value="1">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="formElementSection subSection2">
+                        <div>
+                            <label for="">Valor reserva</label>
+                        </div>
+    
+                        <div>
+                            <input type="number">
+                        </div>
+                    </div>
+                </div>
+
+                    
+    
+                    
+                <div class="sectionInputPC">
+                    <div class="formElementSection subSection1">
+                        <div>
+                            <label for="">
+                                Imagen principal
+                            </label>
+                        </div>
+
+                        <div>
+                            <input type="file" accept=".jpg, .jpeg, .png" class="uploadImage">
+                        </div>
+                    </div>
+    
+    
+                    <div class="formElementSection subSection2">
+                        <div>
+                            <label for="">
+                                Imagen secundaria 
+                            </label>
+                        </div>
+                        <div>
+                            <input type="file" accept=".jpg, .jpeg, .png" class="uploadImage">
+                        </div>
+                    </div>
+                </div>
+    
+                    <div class="formElementSection">
+                        <div>
+                            <label for="">Descripcion</label>
+                        </div>
+    
+                        <div>
+                            <textarea name="" id="" cols="30" rows="10" class="textarea"></textarea>
+                        </div>
+                    </div>
+    
+    
+                    <div class="formIconsSection">
+                            <div class="formIconsElementSection">
+                                <div>
+                                    <input type="checkbox" name="cajaFuerte?" id="" class="checkboxForm">
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-vault"></i>
+                                </div>
+                            </div>
+        
+        
+                            <div class="formIconsElementSection">
+                                <div>
+                                    <input type="checkbox" name="tv?" id="" class="checkboxForm">
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-tv"></i>
+                                </div>
+                            </div>
+        
+        
+                            <div class="formIconsElementSection">
+                                <div>
+                                    <input type="checkbox" name="wifi?" id="" class="checkboxForm">
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-wifi"></i>
+                                </div>
+                            </div>
+
+                            <div class="formIconsElementSection">
+                                <div>
+                                    <input type="checkbox" name="aire?" id="" class="checkboxForm">
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-snowflake"></i>
+                                </div>
+                            </div>
+        
+        
+                            <div class="formIconsElementSection">
+                                <div>
+                                    <input type="checkbox" name="servicio?" id="" class="checkboxForm">
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-bell-concierge"></i>
+                                </div>
+                            </div>
+        
+                            <div class="formIconsElementSection">
+                                <div>
+                                    <input type="checkbox" name="gym?" id="" class="checkboxForm">
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-dumbbell"></i>
+                                </div>
+                            </div>
+                        <div>
+                    </div>
+                    </div>
+
+                    <div class="buttonSection">
+                        <button class="greyButton centrar">Registrar</button>
+                    </div>
+                </form>
+     
+            </div>
+        </div>
+    </section>
+</body>
+</html>
